@@ -16,7 +16,7 @@ app.layout = html.Div(children=[
     html.Div(children='''
         Dash: A web application framework for your data.
     '''),
-
+    
     dcc.DatePickerRange(
         id='my-date-picker-range',
         start_date=date(2022,9,1),

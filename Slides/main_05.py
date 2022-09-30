@@ -67,4 +67,5 @@ def update_plot(tarikh_start, tarikh_habis,pilihan):
     fig = px.line(dataframe.loc[date_specify], x="Timestamp", y=pilihan, template="darkly")
     return fig
 
-app.run_server()
+if __name__ == '__main__':
+    app.run_server(debug=True)
